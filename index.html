@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINEDARQ - Arquitetura e Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="logo">
+                    <img src="logo.jpg" alt="LINEDARQ" class="h-12">
+                </a>
+
+                <div class="hidden md:flex space-x-12 text-sm tracking-widest">
+                    <a href="index.html" class="nav-link active">HOME</a>
+                    <a href="portfolio.html" class="nav-link">PORTFÓLIO</a>
+                    <a href="servicos.html" class="nav-link">SERVIÇOS</a>
+                    <a href="contactos.html" class="nav-link">CONTACTOS</a>
+                </div>
+
+                <button class="md:hidden" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-6 py-4 space-y-4 border-t border-gray-200">
+                <a href="index.html" class="block nav-link active">HOME</a>
+                <a href="portfolio.html" class="block nav-link">PORTFÓLIO</a>
+                <a href="servicos.html" class="block nav-link">SERVIÇOS</a>
+                <a href="contactos.html" class="block nav-link">CONTACTOS</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="hero-section">
+        <div class="hero-image-container">
+            <img src="landingPage.jpg" alt="LINEDARQ" class="hero-image">
+        </div>
+
+        <!-- Architectural Grid Overlay -->
+        <div class="arch-grid"></div>
+
+        <!-- Blueprint Corner Details -->
+        <div class="blueprint-corner top-left">
+            <div class="corner-line-h"></div>
+            <div class="corner-line-v"></div>
+        </div>
+        <div class="blueprint-corner top-right">
+            <div class="corner-line-h"></div>
+            <div class="corner-line-v"></div>
+        </div>
+        <div class="blueprint-corner bottom-left">
+            <div class="corner-line-h"></div>
+            <div class="corner-line-v"></div>
+        </div>
+        <div class="blueprint-corner bottom-right">
+            <div class="corner-line-h"></div>
+            <div class="corner-line-v"></div>
+        </div>
+
+        <!-- Scale Reference -->
+        <div class="scale-indicator">
+            <div class="scale-line"></div>
+            <span class="scale-text">ESCALA 1:100</span>
+        </div>
+
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <div class="project-stamp">EST. 2024</div>
+                <h1 class="hero-title">LINEDARQ</h1>
+                <p class="hero-subtitle">Atelier de Arquitetura</p>
+                <div class="hero-divider"></div>
+                <p class="hero-text">Onde a precisão técnica encontra a visão artística.<br>Projetamos espaços que transcendem o tempo.</p>
+                <a href="portfolio.html" class="hero-cta">
+                    <span>VER PROJETOS</span>
+                    <svg class="cta-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M5 12h14M12 5l7 7-7 7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Social Media - Bottom Right -->
+        <div class="social-fixed-bottom">
+            <a href="https://www.instagram.com/linedarq.studio/" target="_blank" rel="noopener" class="social-bubble instagram" aria-label="Instagram">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke-width="2"/>
+                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" stroke-width="2"/>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
+                <span class="social-tooltip">Instagram</span>
+            </a>
+            <a href="https://www.facebook.com/linedarq.studio?locale=pt_PT" target="_blank" rel="noopener" class="social-bubble facebook" aria-label="Facebook">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="social-tooltip">Facebook</span>
+            </a>
+            <a href="https://wa.me/351939754825?text=Olá%20LINEDARQ!%20Gostaria%20de%20saber%20mais%20sobre%20os%20vossos%20serviços%20de%20arquitetura." target="_blank" rel="noopener" class="social-bubble whatsapp" aria-label="WhatsApp">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="social-tooltip">WhatsApp</span>
+            </a>
+        </div>
+
+        <!-- Coordinates Display -->
+        <div class="coordinates">
+            <span class="coord-label">FELGUEIRAS, PORTO</span>
+            <span class="coord-value">41°21'N 8°11'W</span>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
